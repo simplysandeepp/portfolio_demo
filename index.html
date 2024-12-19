@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Prajapati's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9e9ff; /* Light background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Header Section */
+        .header {
+            background: linear-gradient(45deg, #6a5acd, #8a79ff); /* Gradient background */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .header h4 {
+            font-size: 1.5rem;
+            color: #f0f0f0;
+            animation: fadeIn 3s ease-in-out;
+        }
+    
+        /* Navbar Section */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #6a5acd;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #8a79ff;
+            color: white;
+        }
+    
+        /* Main Section */
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #6a5acd;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            animation: slideIn 1.5s ease;
+        }
+        h2:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #6a5acd;
+            margin: 10px auto;
+            animation: grow 1s ease;
+        }
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    
+        /* Button Styles */
+        .btn-style {
+            margin: 5px;
+            padding: 12px 18px;
+            font-size: 1rem;
+            background-color: #e6e6fa; /* Light lavender */
+            color: #6a5acd;
+            border: 2px solid #6a5acd;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .btn-style:hover {
+            background-color: #d8bfd8; /* Lavender blush */
+            color: white;
+            transform: scale(1.1);
+        }
+    
+        /* Footer Section */
+        .footer {
+            background-color: #6a5acd;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: white;
+            margin: 0 5px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #d8bfd8;
+        }
+    
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes grow {
+            from {
+                width: 0;
+            }
+            to {
+                width: 50px;
+            }
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header h4 {
+                font-size: 1.1rem;
+            }
+            p, li {
+                font-size: 1rem;
+            }
+            .navbar a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>    
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 data-aos="fade-down">Sandeep Prajapati</h1>
+        <h4 data-aos="fade-up">CSE AIML Student</h4>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="container section">
+        <h2 data-aos="fade-right">Profile</h2>
+        <ul data-aos="fade-up">
+            <li>Second-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning.</li>
+            <li>Strong foundation in Data Structures, Algorithms, and full-stack development.</li>
+            <li>Practical experience in Java, web technologies, and AI/ML frameworks.</li>
+        </ul>
+    </div>
+
+    <!-- Education Section -->
+    <div class="container section">
+        <h2 data-aos="fade-left">Education</h2>
+        <ul data-aos="fade-up">
+            <li><strong>Bachelor's in Computer Science Engineering</strong>, Galgotias University, Greater Noida (October 2023 – Present)</li>
+            <li><strong>XII (PCM)</strong>, Doon Bharti Public School, Faridabad (March 2023)</li>
+            <ul>
+                <li>Percentage: 74.4%</li>
+                <li>JEE Mains: 88.40 percentile</li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Courses Section -->
+    <div class="container section">
+        <h2 data-aos="fade-right">Courses</h2>
+        <ul data-aos="fade-up">
+            <li>DSA with JAVA, Apna College (December 2023 – April 2024)</li>
+            <li>Web Development - Full Stack, Apna College (May 2024 – November 2024)</li>
+            <li>AIML for Geodata Analysis, IIRS ISRO (September 2024)</li>
+            <li>Overview of Global Navigation Satellite System, IIRS ISRO (November 2024)</li>
+            <li>Database Design, Oracle Academy (August 2024 – December 2024)</li>
+        </ul>
+    </div>
+
+    <!-- Extra-Curricular Section -->
+    <div class="container section">
+        <h2 data-aos="fade-left">Extra-Curricular Activities</h2>
+        <ul data-aos="fade-up">
+            <li>Participated in Smart India Hackathon (SIH-2024) at Galgotias University, Greater Noida (September 2024)</li>
+            <ul>
+                <li>Developed a modern website focused on Indian culture.</li>
+                <li>Highlighted cultural heritage, tourism, and festivals.</li>
+                <li>Used HTML, CSS, JavaScript, Django, Python, and Bootstrap for an interactive platform.</li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container section">
+        <h2 data-aos="fade-right">Details</h2>
+        <ul data-aos="fade-up">
+            <li>Location: Faridabad, India</li>
+            <!-- <li>Phone: +91 9643609607</li> -->
+            <li>Email: <a href="mailto:sandeepprajapati1202@gmail.com">sandeepprajapati1202@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <!-- Social Links Section -->
+    <div class="container section">
+        <h2 data-aos="fade-left">Social Links</h2>
+        <div class="social-links" data-aos="fade-up">
+            <a href="https://github.com/simplysandeepp" class="btn-style">Github</a>
+            <a href="https://www.linkedin.com/in/sandeep-prajapati-ba04451b3/" class="btn-style">LinkedIn</a>
+            <a href="https://leetcode.com/u/simplysandeepp/" class="btn-style">LeetCode</a>
+            <a href="https://www.hackerrank.com/profile/simplysandeepp" class="btn-style">HackerRank</a>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="container section">
+        <h2 data-aos="fade-left">Technical Skills</h2>
+        <div class="skills" data-aos="fade-up">
+            <a href="#" class="btn-style">Java (Data Structures)</a>
+            <a href="#" class="btn-style">HTML, CSS & JavaScript</a>
+            <a href="#" class="btn-style">MERN Stack</a>
+            <a href="#" class="btn-style">SQL</a>
+            <a href="#" class="btn-style">Python (Intermediate)</a>
+            <a href="#" class="btn-style">Problem Solving</a>
+        </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div class="container section">
+        <h2 data-aos="fade-right">Hobbies</h2>
+        <ul data-aos="fade-up">
+            <li>Badminton</li>
+            <li>Volleyball</li>
+            <li>Driving</li>
+            <li>Playing Games</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Sandeep Prajapati. All rights reserved.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
